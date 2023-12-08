@@ -1,6 +1,7 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from statistics import mean
 
 # This file includes all the functions created. 
@@ -24,15 +25,6 @@ def genre_count(data):
     top_genre.columns = ['Playlist Genre', 'Track Counts']
     return top_genre
 
-def plot_genre(data):
-    # Set the figure size
-    plt.figure(figsize=(12, 8))
-    # Create a countplot of the genre data
-    sns.countplot(x='playlist_genre', data=data)
-    plt.xlabel('Playlist Genre', fontsize=14)
-    plt.ylabel('Total Genre Counts', fontsize=14)
-    plt.title('Playlist Genre Counts on Spotify', fontsize=15)
-
 def genre_popularity(data):
     # Set the figure size
     plt.figure(figsize=(12, 8))
@@ -43,3 +35,21 @@ def genre_popularity(data):
     plt.ylabel('Average Popularity',fontsize=14)
     plt.title('Average Popularity by Music Genre',fontsize=15)
 
+def month_popularity(data):
+    data['track_album_release_date'] = data['track_album_release_date'].astype(str)
+    # Filter out rows with different date formats
+    data = data[pd.to_datetime(data['track_album_release_date'], errors='coerce').notna()]
+    # Convert the 'track_album_release_date' column to datetime
+    data['track_album_release_date'] = pd.to_datetime(data['track_album_release_date'])
+    # Extract the month from the datetime values
+    data['release_month'] = data['track_album_release_date'].dt.month_name()
+    month_order = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ]
+    plt.figure(figsize=(12, 8))
+    sns.pointplot(x='release_month',  y='track_popularity', data=data, palette='viridis',estimator = np.mean,order=month_order)
+    # Set labels and title
+    plt.xlabel('Release Month', fontsize=14)
+    plt.ylabel('Average Track Popularity', fontsize=14)
+    plt.title('Average Track Popularity by Month', fontsize=15)
