@@ -1,59 +1,94 @@
-![@neonbrand via Unsplash - person holding space gray iPhone 6](https://images.unsplash.com/photo-1495434942214-9b525bba74e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
-
-# Spotify Songs
-
-The data this week comes from Spotify via the [`spotifyr` package](https://www.rcharlie.com/spotifyr/). [Charlie Thompson](https://twitter.com/_RCharlie), [Josiah Parry](https://twitter.com/JosiahParry), Donal Phipps, and Tom Wolff authored this package to make it easier to get either your own data or general metadata arounds songs from Spotify's API. Make sure to check out the [`spotifyr` package](https://www.rcharlie.com/spotifyr/) website to see how you can collect your own data!
-
-[Kaylin Pavlik](https://twitter.com/kaylinquest/status/1213138536570015745) had a recent [blogpost](https://www.kaylinpavlik.com/classifying-songs-genres/) using the audio features to explore and classify songs. She used the `spotifyr` package to collect about 5000 songs from 6 main categories (EDM, Latin, Pop, R&B, Rap, & Rock). 
-
-h/t to [Jon Harmon](https://github.com/rfordatascience/tidytuesday/issues/160) & [Neal Grantham](https://twitter.com/nsgrantham/status/1213190975113199616).
-
-### Get the data here
-
-```{r}
-# Get the Data
-
-spotify_songs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-01-21/spotify_songs.csv')
-
-# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
-# PLEASE NOTE TO USE 2020 DATA YOU NEED TO UPDATE tidytuesdayR from GitHub
-
-# Either ISO-8601 date or year/week works!
-
-# Install via devtools::install_github("thebioengineer/tidytuesdayR")
-
-tuesdata <- tidytuesdayR::tt_load('2020-01-21') 
-tuesdata <- tidytuesdayR::tt_load(2020, week = 4)
+# Final_Group_Project
+This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
 
 
-spotify_songs <- tuesdata$spotify_songs
-```
-### Data Dictionary
+### Requirements
+Your team project should include the following:
 
-# `spotify_songs.csv`
+* Microservice
 
-|variable                 |class     |description |
-|:---|:---|:-----------|
-|track_id                 |character | Song unique ID|
-|track_name               |character | Song Name|
-|track_artist             |character | Song Artist|
-|track_popularity         |double    | Song Popularity (0-100) where higher is better |
-|track_album_id           |character | Album unique ID|
-|track_album_name         |character | Song album name |
-|track_album_release_date |character | Date when album released |
-|playlist_name            |character | Name of playlist |
-|playlist_id              |character | Playlist ID|
-|playlist_genre           |character | Playlist genre |
-|playlist_subgenre        |character | Playlist subgenre|
-|danceability             |double    | Danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable. |
-|energy                   |double    | Energy is a measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy. |
-|key                      |double    | The estimated overall key of the track. Integers map to pitches using standard Pitch Class notation . E.g. 0 = C, 1 = C♯/D♭, 2 = D, and so on. If no key was detected, the value is -1. |
-|loudness                 |double    | The overall loudness of a track in decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typical range between -60 and 0 db.|
-|mode                     |double    | Mode indicates the modality (major or minor) of a track, the type of scale from which its melodic content is derived. Major is represented by 1 and minor is 0.|
-|speechiness              |double    | Speechiness detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent music and other non-speech-like tracks. |
-|acousticness             |double    | A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.|
-|instrumentalness         |double    | Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0. |
-|liveness                 |double    | Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live. |
-|valence                  |double    | A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry). |
-|tempo                    |double    | The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration. |
-|duration_ms              |double    | Duration of song in milliseconds |
+Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository.
+
+* Load Test
+
+The microservice must be capable of handling 10,000 requests per second. A load test verifying this performance should be included.
+
+* Data Engineering
+
+Your project should involve the use of a library specializing in data engineering such as Spark, Pandas, SQL, a vector database, or any other relevant library.
+
+* Infrastructure as Code (IaC)
+
+Your project must utilize an IaC solution for infrastructure setup and management. You can choose among AWS CloudFormation, AWS SAM, AWS CDK, or the Serverless Framework.
+
+√ Continuous Integration and Continuous Delivery (CI/CD)
+
+Implement a CI/CD pipeline for your project. It could be through GitHub Actions or AWS Cloud Build or any other relevant tool.
+
+* README.md
+
+A comprehensive README file that clearly explains what the project does, its dependencies, how to run the program, its limitations, potential areas for improvement, and how AI Pair Programming tools (GitHub Copilot and one more tool of your choice) were used in your development process.
+
+* Architectural Diagram
+
+A clear diagram representing the architecture of your application should be included in your project documentation.
+
+√ GitHub Configurations
+
+Your GitHub repository must include GitHub Actions and a .devcontainer configuration for GitHub Codespaces. This should make the local version of your project completely reproducible. The repository should also include GitHub Action build badges for install, lint, test, and format actions.
+
+* Teamwork Reflection
+
+Each team member should submit a separate 1-2 page management report reflecting on the team's functioning according to the principles discussed in your teamwork book. This report should not be part of the GitHub README but rather a separate document. It should include a peer evaluation in which each team member is graded on their performance, stating three positive attributes and three areas for improvement as the basis for the grade. Note that each student will share the teamwork reflection with their team and discuss it in a session before turning in the report. The outcome of this feedback session must be included in the report for full credit.
+
+* Quantitative Assessment
+
+The project must include a quantitative assessment of its reliability and stability. You must use data science fundamentals to describe system performance, e.g., average latency per request at different levels of requests per second (100, 1000, etc.). ❓ Think of the software system as a data science problem that needs to be described using data science principles.
+
+* Demo Video
+
+A YouTube link in README.md showing a clear, concise walkthrough and demonstration of your application, including the load test and system performance assessment.
+
+* Team Size and Makeup
+
+The team should consist of 3-4 people, ideally composed of 1-2 strong programmers and 1-2 quantitative storytellers.
+
+### Grading Rubric
+
+Microservice (20%)
+Implementation of the microservice: 10 points
+
+Use of logging: 5 points
+Proper containerization with Distroless: 5 points
+
+Load Test (20%)
+Successful load test at 10,000 requests/second: 20 points
+
+Data Engineering (10%)
+Effective use of a data engineering library: 10 points
+
+Infrastructure as Code (IaC) (10%)
+Correct setup and management of infrastructure using IaC: 10 points
+
+Continuous Integration and Continuous Delivery (CI/CD) (10%)
+Proper implementation of a CI/CD pipeline: 10 points
+
+README.md (10%)
+Clarity and comprehensiveness of README.md: 5 points
+Explanation of AI Pair Programming tool usage: 5 points
+
+Architectural Diagram (5%)
+Quality and clarity of the architectural diagram: 5 points
+
+GitHub Configurations (5%)
+GitHub Actions + GitHub Codespaces .devcontainer configuration: 5 points
+
+Final Team Presentation (15%)
+Quality and clarity of presentation: 10 points
+Team's ability to effectively answer questions and discuss the project: 5 points
+
+Teamwork Reflection (5%)
+Quality and sincerity of reflection: 3 points
+Reflection includes peer evaluation with three positive attributes and three areas for improvement: 2 points
+
+Total: 100%
