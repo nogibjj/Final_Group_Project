@@ -2,9 +2,9 @@
 This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
 
 ## Research Questions
-What is the highest rated movie of all time?
-Which genre of music are the most popular?
-Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
+- What is the highest rated movie of all time?
+- Which genre of music are the most popular?
+- Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
 
 ### Requirements
 Your team project should include the following:
