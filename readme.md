@@ -5,9 +5,9 @@ This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cas
 ### Requirements
 Your team project should include the following:
 
-* Microservice
+√ Microservice
 
-Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository.
+Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository. (fastAPI: web framework used to build APIs;need to improve the ui design of the website)
 
 * Load Test
 

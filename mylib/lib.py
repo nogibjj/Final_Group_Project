@@ -53,3 +53,9 @@ def month_popularity(data):
     plt.xlabel('Release Month', fontsize=14)
     plt.ylabel('Average Track Popularity', fontsize=14)
     plt.title('Average Track Popularity by Month', fontsize=15)
+
+def find_highest_popularity_track(data):
+    """Find the track with the highest popularity score."""
+    max_popularity = data['track_popularity'].max()
+    most_popular_tracks = data[data['track_popularity'] == max_popularity]
+    return most_popular_tracks[['track_name', 'track_artist', 'track_popularity']]

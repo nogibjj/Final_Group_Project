@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My FastAPI App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">FastAPI</span> Web Application</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="/">Home</a></li>
+                    <!-- Add other navigation links here -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- Content goes here -->
+        <h2>Welcome to the FastAPI App</h2>
+        <p>This is a simple web application using FastAPI, HTML, and CSS.</p>
+    </div>
+</body>
+</html>
