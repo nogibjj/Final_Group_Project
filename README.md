@@ -7,6 +7,7 @@ This repository
 ## Github Actions CI/CD
 [![Lint](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml)
 [![install](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml)
+[![Test](https://github.com/nogibjj/Final_Group_Project/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/test.yml)
 
 ## Research Questions
 - What is the highest popularity track in the dataset?
