@@ -1,10 +1,18 @@
 # Final_Group_Project
 This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
 
+## Purpose
+
 ## Research Questions
 - What is the highest popularity track in the dataset?
 - Which genre of music are the most popular?
 - Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
+
+## App Demonstration
+APP can be found here: [MusicScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
+
+## App Functionality
+**Build a schedule for listening to popular spotify music:** This app helps to build schedule for listening to popular spotify music. Users can input their desired music songs, and the schedule builder will be able to return a daily schedule for the user. The schedule will be able to return the exact time suitable for listening to the music without interfering with the user's other essential to-dos. 
 
 ## Load Test - Quantitative Assessment
 We use `Locust` test to load test for our Flask app. This is a useful platform for testing web application. It helps us assess how our web application handles increased requests. 
