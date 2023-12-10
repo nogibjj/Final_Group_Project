@@ -39,7 +39,7 @@ The music builder website application uses Docker to containerize images in Azur
 [![CI](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml)
 
 ## Data Exploration Dataset
-The dataset used is a from Kaggle, which contains 300000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found here: [![spotify](https://github.com/nogibjj/Final_Group_Project/blob/bc007a253da85c061375df207054e062e27b7f37/spotify_songs.csv)
+The dataset used is a from Kaggle, which contains 300000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found here: ![spotify](https://github.com/nogibjj/Final_Group_Project/blob/bc007a253da85c061375df207054e062e27b7f37/spotify_songs.csv)
 
 
 ## Research Questions - Data Exploration
