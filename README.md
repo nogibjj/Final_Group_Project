@@ -9,6 +9,7 @@ This repository
 [![install](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml)
 [![Test](https://github.com/nogibjj/Final_Group_Project/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/test.yml)
 [![Format](https://github.com/nogibjj/Final_Group_Project/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/format.yml)
+[![CI](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml)
 
 ## Research Questions
 - What is the highest popularity track in the dataset?
