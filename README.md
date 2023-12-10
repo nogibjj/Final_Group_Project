@@ -48,7 +48,7 @@ Load test on Locust is set to test 10000 requests per second. We adjust the matr
 The computed results as shown in the statistical plots above are good for now. As response time reaches more than 10,000 ms for both 50th and 95th percentile. 
 Total requests per second reach about more than 400 requests per second as well. 
 
-## Preparation and Setup
+## Preparation and Setup Web Application (Flask App)
 1. clone the repository
 2. modify requirements.txt file to contain the necessary packages
 3. use `pip install Flask` to install Flask on codespace
