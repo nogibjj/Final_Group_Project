@@ -50,14 +50,18 @@ The dataset used in this project is from Kaggle, which contains 300000 Spotify s
 - Which genre of music are the most popular?
 - Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
 ## Data Exploration Visualization and Analysis
-https://github.com/nogibjj/Final_Group_Project/blob/main/popularity_distribution.png
 
+![popularity_distribution](https://github.com/nogibjj/Final_Group_Project/assets/143833511/a15396fa-ac96-4775-8cee-4b4452d6b081)
+
+The popularity distribution plot shows overall the tracks' popularity follow a normal distribution with a mean around 55. Yet there is an exception that large amounts of tracks fall into 0 popularity. 
 After sorting the tracks by popularity, we found out Dance Monkey by Tones and I has the highest popularity among all songs on Spotify, with a popularity score at 100. 
 
-https://github.com/nogibjj/Final_Group_Project/blob/main/genre_popularity.png
+![genre_popularity](https://github.com/nogibjj/Final_Group_Project/assets/143833511/65bd2479-5767-455d-ae82-7ffffc316f92)
+
 From our analysis, we can see that among all genres, pop is the most popular, followed by latin. And we found that Edm is the least popular genre on Spotify. 
 
-https://github.com/nogibjj/Final_Group_Project/blob/main/monthly_popularity.png
+![monthly_popularity](https://github.com/nogibjj/Final_Group_Project/assets/143833511/256e3f96-4ff2-4cf4-9796-dd4b1c263d36)
+
 The plot depicting the average track popularity over the months indicates a general upward trend as the year progresses. The tracks released in December tend to have the highest average popularity. This could be attributed to a rise in people's leisure time and engagement with relaxing activities, particularly music, during the holiday seasons.
 
 
