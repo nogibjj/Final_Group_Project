@@ -1,30 +1,29 @@
 # Final_Group_Project
 This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
 
+## Research Questions
+- What is the highest popularity track in the dataset?
+- Which genre of music are the most popular?
+- Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
 
 ### Requirements
 Your team project should include the following:
 
-√ Microservice
+* Microservice
 
-Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository. (❗️fastAPI: web framework used to build APIs;need to improve the ui design of the website)
+Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository.
 
 * Load Test
 
 The microservice must be capable of handling 10,000 requests per second. A load test verifying this performance should be included.
 
-❗️Load Test:
-There's no mention of load testing in your description. You need to include a load test (using tools like Apache JMeter or Locust) to ensure your service can handle 10,000 requests per second.
-
-√ Data Engineering
+* Data Engineering
 
 Your project should involve the use of a library specializing in data engineering such as Spark, Pandas, SQL, a vector database, or any other relevant library.
 
-* ❗️Infrastructure as Code (IaC)
+* Infrastructure as Code (IaC)
 
 Your project must utilize an IaC solution for infrastructure setup and management. You can choose among AWS CloudFormation, AWS SAM, AWS CDK, or the Serverless Framework.
-
-Possible options: Azure Resource Manager (ARM) Templates, Azure Bicep, Azure CLI or Azure PowerShell
 
 √ Continuous Integration and Continuous Delivery (CI/CD)
 
@@ -97,3 +96,8 @@ Quality and sincerity of reflection: 3 points
 Reflection includes peer evaluation with three positive attributes and three areas for improvement: 2 points
 
 Total: 100%
+
+Please run the below code to access the web app:
+```
+uvicorn app:app --reload --host 0.0.0.0 --port 5000
+```
