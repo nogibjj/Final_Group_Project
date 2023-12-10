@@ -44,6 +44,9 @@ The dataset used in this project is from Kaggle, which contains 300000 Spotify s
 
 ## Research Questions - Data Exploration
 - What is the highest popularity track in the dataset?
+  
+Dance Monkey by Tones and I has the highest popularity among all songs on Spotify, with a popularity score at 100. 
+
 - Which genre of music are the most popular?
 
 From our analysis, we can see that among all genres, pop is the most popular, followed by latin. And we found that Edm is the least popular genre on Spotify. 
