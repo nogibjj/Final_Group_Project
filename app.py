@@ -4,7 +4,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 import pandas as pd
 from mylib.lib import (
-    plot_popularity, genre_count, find_most_popular_genre, 
+    genre_count,
     month_popularity, find_highest_popularity_track
 )
 
@@ -32,7 +32,7 @@ def get_most_popular_song():
 
 @app.get("/most_popular_genre")
 def get_most_popular_genre():
-    genre = find_most_popular_genre(spotify_data)  # This function needs to be implemented in lib.py
+    genre = genre_count(spotify_data) 
     return {"most_popular_genre": genre}
 
 @app.get("/popularity_trends_by_month")

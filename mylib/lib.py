@@ -30,7 +30,8 @@ def genre_popularity(data):
 
 def month_popularity(data):
     data = data.copy()
-    data['track_album_release_date'] = pd.to_datetime(data['track_album_release_date'], errors='coerce')
+    data['track_album_release_date'] = pd.to_datetime(data['track_album_release_date'], 
+                                                      errors='coerce')
     data.dropna(subset=['track_album_release_date'], inplace=True)
     data['release_month'] = data['track_album_release_date'].dt.month_name()
 
@@ -40,11 +41,16 @@ def month_popularity(data):
     ]
 
     # Calculate the average popularity for each month
-    avg_popularity_by_month = data.groupby('release_month')['track_popularity'].mean().reindex(month_order)
+    # Group by release month and calculate mean popularity
+    avg_popularity = data.groupby('release_month')['track_popularity'].mean()
+
+    # Reindex based on the month_order to ensure chronological order
+    avg_popularity_by_month = avg_popularity.reindex(month_order)
     
     # Plotting
     plt.figure(figsize=(12, 8))
-    sns.pointplot(x=avg_popularity_by_month.index, y=avg_popularity_by_month.values, order=month_order)
+    sns.pointplot(x=avg_popularity_by_month.index, y=avg_popularity_by_month.values, 
+                  order=month_order)
     plt.xlabel('Release Month', fontsize=14)
     plt.ylabel('Average Track Popularity', fontsize=14)
     plt.title('Average Track Popularity by Month', fontsize=15)
