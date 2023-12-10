@@ -2,6 +2,7 @@
 This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
 
 ## Purpose
+This repository
 
 ## Research Questions
 - What is the highest popularity track in the dataset?
