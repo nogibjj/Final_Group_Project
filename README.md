@@ -62,7 +62,7 @@ From our analysis, we can see that among all genres, pop is the most popular, fo
 
 ![monthly_popularity](https://github.com/nogibjj/Final_Group_Project/assets/143833511/256e3f96-4ff2-4cf4-9796-dd4b1c263d36)
 
-The plot depicting the average track popularity over the months indicates a general upward trend as the year progresses. The tracks released in December tend to have the highest average popularity. This could be attributed to a rise in people's leisure time and engagement with relaxing activities, particularly music, during the holiday seasons.
+The plot depicting the average track popularity over the months indicates a general upward trend as the year progresses. The tracks released in November tend to have the highest average popularity. This could be attributed to a rise in people's leisure time and engagement with relaxing activities, particularly music, during the holiday seasons.
 
 
 
