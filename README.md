@@ -32,11 +32,14 @@ The music builder website application uses Docker to containerize images in Azur
 - ``mylib``folder contains the exploratory functions for analyzing the spotify dataset `lib.py`, and the `extract.py` for extracting the dataset from an url and `query.py` for performing queries on the dataset. 
 
 ## Github Actions CI/CD
+Github actions are used to test the Makefile commands and the pipeline as well. The Status badges for Lint, Install, Format and CI action in general are included here. 
 [![Lint](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml)
 [![install](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml)
-[![Test](https://github.com/nogibjj/Final_Group_Project/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/test.yml)
 [![Format](https://github.com/nogibjj/Final_Group_Project/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/format.yml)
 [![CI](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml)
+
+Example Github Action for Test
+<img width="926" alt="截屏2023-12-10 17 37 39" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/5a04cda0-9e02-43cc-ae7c-01c6cccb7aa1">
 
 ## Data Exploration Dataset
 The dataset used in this project is from Kaggle, which contains 300000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found in `spotify_song.csv`. 
