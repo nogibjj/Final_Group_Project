@@ -7,37 +7,47 @@ import csv
 
 
 # load the csv file and insert into a new sqlite3 database
-def load(dataset="data/births.csv"):
+def load(dataset="data/spotify_songs.csv"):
     """Transforms and Loads data into the local SQLite3 database"""
     payload = csv.reader(open(dataset, newline=""), delimiter=",")
     # skips the header of csv
     next(payload)
-    conn = sqlite3.connect("birthDB.db")
+    conn = sqlite3.connect("spotifyDB.db")
     c = conn.cursor()
-    c.execute("DROP TABLE IF EXISTS birthDB")
+    c.execute("DROP TABLE IF EXISTS spotifyDB")
     c.execute(
         """
-        CREATE TABLE birthDB (
+        CREATE TABLE spotifyDB (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            year INTEGER,
-            month INTEGER,
-            date_of_month INTEGER,
-            day_of_week INTEGER,
-            births INTEGER
+            track_name TEXT,
+            artist(s)_name TEXT,
+            artist_count INTEGER,
+            released_year INTEGER,
+            released_month INTEGER,
+            released_day INTEGER,
+            in_spotify_playlists INTEGER,
+            in_spotify_charts INTEGER,
+            streams INTEGER,
+            in_apple_playlists INTEGER
         )
     """
     )
     # insert
     c.executemany(
         """
-        INSERT INTO birthDB(
-            year, 
-            month,
-            date_of_month, 
-            day_of_week,
-            births
+        INSERT INTO spotifyDB(
+            track_name,
+            artist(s)_name,
+            artist_count,
+            released_year,
+            released_month,
+            released_day,
+            in_spotify_playlists,
+            in_spotify_charts,
+            streams,
+            in_apple_playlists
             ) 
-            VALUES (?,?, ?, ?, ?)""",
+            VALUES (?,?, ?, ?, ?,?,?,?,?,?)""",
         payload,
     )
     conn.commit()
