@@ -2,7 +2,8 @@
 This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
 
 ## Purpose
-This repository
+This repository contains the microservice for a music schedule builder website application and spotify popular songs dataset exploratory analysis. These microservices interface with Azure Databricks pipeline (workspace, compute cluster, job run etc.), Azure Web App Service, and Flask app to deploy and run. We will explain these microservices in details in the sections below in thsi `READ.md` file. 
+The music builder website application uses Docker to containerize images in Azure App Registry. The data exploration is done with extract, transform_load, query and python data exploratory packages such as pandas and matplotlib. It is then clone in Azure Databricks workspace to run jobs on the pipeline. 
 
 ## Github Actions CI/CD
 [![Lint](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml)
