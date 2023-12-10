@@ -7,19 +7,24 @@ Your team project should include the following:
 
 √ Microservice
 
-Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository. (fastAPI: web framework used to build APIs;need to improve the ui design of the website)
+Build a microservice that interfaces with a data pipeline. You can choose Python or Rust for development. The microservice should include logging and be containerized using the Distroless Docker image. A Dockerfile must be included in your repository. (❗️fastAPI: web framework used to build APIs;need to improve the ui design of the website)
 
 * Load Test
 
 The microservice must be capable of handling 10,000 requests per second. A load test verifying this performance should be included.
 
-* Data Engineering
+❗️Load Test:
+There's no mention of load testing in your description. You need to include a load test (using tools like Apache JMeter or Locust) to ensure your service can handle 10,000 requests per second.
+
+√ Data Engineering
 
 Your project should involve the use of a library specializing in data engineering such as Spark, Pandas, SQL, a vector database, or any other relevant library.
 
-* Infrastructure as Code (IaC)
+* ❗️Infrastructure as Code (IaC)
 
 Your project must utilize an IaC solution for infrastructure setup and management. You can choose among AWS CloudFormation, AWS SAM, AWS CDK, or the Serverless Framework.
+
+Possible options: Azure Resource Manager (ARM) Templates, Azure Bicep, Azure CLI or Azure PowerShell
 
 √ Continuous Integration and Continuous Delivery (CI/CD)
 
