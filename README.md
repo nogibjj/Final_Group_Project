@@ -107,12 +107,13 @@ Total requests per second reach about more than 400 requests per second as well.
 ## App Usage
 1. Click plan your day
 2. Input the daily to-dos with the daily essentials and desired spotify music
-   
-<img width="1400" alt="截屏2023-12-09 21 12 28" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/94ac597d-ac44-4cfc-bf30-ea24928429b0">
+
+<img width="1525" alt="截屏2023-12-10 18 02 07" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/51383da2-34cd-4c5f-ad0a-787769b3efac">
 
 3. Click Generate Schedule
 4. A Planned schedule with a planned time to listen to the desired spotify music will be shown
-<img width="1222" alt="截屏2023-12-09 21 12 36" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/591d5fea-9cac-4b98-a344-2c25560bbc2c">
+
+<img width="1041" alt="截屏2023-12-10 18 36 34" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/0e42267d-43ff-462e-ad21-30928d8fcb4a">
 
 ### Requirements
 Your team project should include the following:
