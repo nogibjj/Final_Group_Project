@@ -5,6 +5,32 @@ This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cas
 This repository contains the microservice for a music schedule builder website application and spotify popular songs dataset exploratory analysis. These microservices interface with Azure Databricks pipeline (workspace, compute cluster, job run etc.), Azure Web App Service, and Flask app to deploy and run. We will explain these microservices in details in the sections below in thsi `READ.md` file. 
 The music builder website application uses Docker to containerize images in Azure App Registry. The data exploration is done with extract, transform_load, query and python data exploratory packages such as pandas and matplotlib. It is then clone in Azure Databricks workspace to run jobs on the pipeline. 
 
+## Key Components of the Repository
+- ``.devcontainer`` includes a Dockerfile and devcontainer.json.
+                The 'Dockerfile' within this folder specifies how the container should be built
+
+- ``workflows`` includes CI.yml, which contain configuration files for setting up automated build, test, and deployment pipelines
+
+- ``.gitignore`` is used to specify which files or directories should be excluded from version control when using Git.
+
+- ``Makefile`` is a configuration file used in Unix-based systems for automating tasks and building software. It contains instructions and dependencies for compiling code, running tests, and other development tasks.
+
+- ``README.md`` is the instruction file for the readers.
+
+- ``main.py`` is a Python file. This specific main.py includes the functions for the Flask App. 
+
+- ``requirements.txt`` is to specify the dependencies (libraries and packages) required to run the project.
+
+- ``test_main.py`` is a test file for main.py
+
+- ``templates`` folder includes all the templates for the app
+  
+- ``static`` includes the necessary files which are downloadede
+  
+- ``Dockerfile``is provided to containerize the Flask app
+
+- ``mylib``folder contains the exploratory functions for analyzing the spotify dataset `lib.py`, and the `extract.py` for extracting the dataset from an url and `query.py` for performing queries on the dataset. 
+
 ## Github Actions CI/CD
 [![Lint](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml)
 [![install](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml)
