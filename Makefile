@@ -22,6 +22,3 @@ deploy:
 	# Deploy goes here
 
 all: install lint test format deploy
-
-job:
-	python run_job.py
