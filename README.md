@@ -4,6 +4,9 @@ This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cas
 ## Purpose
 This repository
 
+## Github Actions CI/CD
+[CI]
+
 ## Research Questions
 - What is the highest popularity track in the dataset?
 - Which genre of music are the most popular?
