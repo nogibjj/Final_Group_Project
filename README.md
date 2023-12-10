@@ -6,6 +6,25 @@ This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cas
 - Which genre of music are the most popular?
 - Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
 
+## Load Test - Quantitative Assessment
+We use `Locust` test to load test for our Flask app. This is a useful platform for testing web application. It helps us assess how our web application handles increased requests. 
+The code for running Locust test in stored in `locustfile.py`. 
+To run this, use `pip install locust` to install locust on codespace or local machine. 
+Then run `locust` command to run the web version locust test. This can be used within the link provided by running the command. 
+
+<img width="1133" alt="截屏2023-12-10 17 11 26" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/0263d2ea-a347-4ea2-9acb-fe0d8af0db39">
+
+Loaded Tests: 
+<img width="1504" alt="截屏2023-12-10 17 05 21" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/e2f75883-0519-442f-b3d0-b71a540c4fa4">
+
+<img width="1505" alt="截屏2023-12-10 17 05 27" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/2fd443c2-d107-4b6e-b965-0d03e929ff4a">
+
+<img width="1509" alt="截屏2023-12-10 17 05 31" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/b5eb9496-4e54-427a-b033-97d960da2b3e">
+
+Load test on Locust is set to test 10000 requests per second. We adjust the matrices for number of users and Spawn rate (users started/second) to get the response rate. 
+The computed results as shown in the statistical plots above are good for now. As response time reaches more than 10,000 ms for both 50th and 95th percentile. 
+Total requests per second reach about more than 400 requests per second as well. 
+
 ### Requirements
 Your team project should include the following:
 
