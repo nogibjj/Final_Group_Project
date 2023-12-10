@@ -1,8 +1,12 @@
 from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse
 import pandas as pd
-from mylib.lib import find_most_popular_song, genre_count, genre_popularity
+from mylib.lib import (
+    plot_popularity, genre_count, find_most_popular_genre, 
+    month_popularity, find_highest_popularity_track
+)
 
 # Initialize the FastAPI app
 app = FastAPI()
@@ -23,12 +27,18 @@ async def read_root(request: Request):
 
 @app.get("/most_popular_song")
 def get_most_popular_song():
-    song = find_most_popular_song(spotify_data)
+    song = find_highest_popularity_track(spotify_data)
     return {"most_popular_song": song}
 
-@app.get("/genre_count")
-def get_genre_count():
-    count = genre_count(spotify_data)
-    return {"genre_count": count}
+@app.get("/most_popular_genre")
+def get_most_popular_genre():
+    genre = find_most_popular_genre(spotify_data)  # This function needs to be implemented in lib.py
+    return {"most_popular_genre": genre}
+
+@app.get("/popularity_trends_by_month")
+def get_popularity_trends_by_month():
+    trends = month_popularity(spotify_data)
+    # Convert DataFrame to JSON-friendly format
+    return trends.to_dict('records')
 
 # Add other endpoints as necessary

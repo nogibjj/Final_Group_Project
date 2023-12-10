@@ -1,6 +1,6 @@
-from mylib.lib import plot_popularity,genre_count,genre_popularity,month_popularity, find_highest_popularity_track
+from mylib.lib import (plot_popularity,genre_count,genre_popularity,
+                       month_popularity, find_highest_popularity_track)
 import pandas as pd
-import matplotlib.pyplot as plt
 
 def main():
     spotify = pd.read_csv("spotify_songs.csv")

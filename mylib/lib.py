@@ -39,13 +39,24 @@ def month_popularity(data):
         'July', 'August', 'September', 'October', 'November', 'December'
     ]
 
+    # Calculate the average popularity for each month
+    avg_popularity_by_month = data.groupby('release_month')['track_popularity'].mean().reindex(month_order)
+    
+    # Plotting
     plt.figure(figsize=(12, 8))
-    sns.pointplot(x='release_month', y='track_popularity', data=data, estimator=mean, order=month_order)
+    sns.pointplot(x=avg_popularity_by_month.index, y=avg_popularity_by_month.values, order=month_order)
     plt.xlabel('Release Month', fontsize=14)
     plt.ylabel('Average Track Popularity', fontsize=14)
     plt.title('Average Track Popularity by Month', fontsize=15)
     plt.savefig('monthly_popularity.png')
     plt.close()
+
+    # Convert the result to a DataFrame for return
+    popularity_trends = avg_popularity_by_month.reset_index()
+    popularity_trends.columns = ['Release Month', 'Average Popularity']
+
+    return popularity_trends
+
 
 def find_highest_popularity_track(data):
     max_popularity = data['track_popularity'].max()
