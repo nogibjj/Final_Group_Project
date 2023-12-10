@@ -121,6 +121,12 @@ Total requests per second reach about more than 400 requests per second as well.
 
 <img width="1041" alt="截屏2023-12-10 18 36 34" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/0e42267d-43ff-462e-ad21-30928d8fcb4a">
 
+## Azure Databricks Job Run
+Action of our CI/CD Pipeline is also tested through job run on Azure Databricks. Dataset and the entire Github repository is cloned in Azure Databricks workspace. A compute cluster is then created for the workspace as well as for the designed job run pipeline. This pipeline is designed to test all the python files in `mylib` folder, which are the essential files containing data exploration, extract and query. 
+
+<img width="1331" alt="截屏2023-12-10 18 42 34" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/2b05d6a8-90e6-4484-872f-1f379a4cde24">
+
+
 ### Requirements
 Your team project should include the following:
 
