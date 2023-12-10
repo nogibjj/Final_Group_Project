@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Schedule Planner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <main class="text-center">
+        <h1 class="display-6 fw-bold text-primary my-4">Welcome to Your Daily Schedule Planner</h1>
+        <a href="{{ url_for('schedule') }}" class="btn btn-primary btn-lg">Plan Your Day</a>
+    </main>
+</body>
+</html>

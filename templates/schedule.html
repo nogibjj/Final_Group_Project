@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Daily Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+    <main class="text-center">
+        <h1 class="display-6 fw-bold my-4">Your Daily Schedule</h1>
+        <div class="m-4">
+            <p>{{ schedule | safe }}</p>
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Go Back</a>
+        </div>
+    </main>
+</body>
+</html>
