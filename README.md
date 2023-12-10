@@ -96,3 +96,8 @@ Quality and sincerity of reflection: 3 points
 Reflection includes peer evaluation with three positive attributes and three areas for improvement: 2 points
 
 Total: 100%
+
+Please run the below code to access the web app:
+```
+uvicorn app:app --reload --host 0.0.0.0 --port 5000
+```
