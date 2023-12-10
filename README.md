@@ -48,6 +48,40 @@ Load test on Locust is set to test 10000 requests per second. We adjust the matr
 The computed results as shown in the statistical plots above are good for now. As response time reaches more than 10,000 ms for both 50th and 95th percentile. 
 Total requests per second reach about more than 400 requests per second as well. 
 
+## Preparation and Setup
+1. clone the repository
+2. modify requirements.txt file to contain the necessary packages
+3. use `pip install Flask` to install Flask on codespace
+4. use `brew update && brew install azure-cli` to install azure-cli locally
+5. login to Azure locally using "az login"
+6. Build an image locally using `docker build --tag myfinalschedule .`
+<img width="882" alt="截屏2023-12-10 13 24 45" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/69b0a2ad-5235-42a9-acf0-ce7ab18baaf5">
+   
+7. Build a container locally using `docker run --detach --publish 5000:50505 myfinalschedule`
+   
+<img width="813" alt="截屏2023-12-10 13 23 46" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/3cefbe70-78f2-411a-94c5-f628336ad08b">
+
+8. Create an App on Azure using `az containerapp up --resource-group myfinalschedule --name myfinalschedule --ingress external --target-port 50505 --source .` This will first create the resource group, run the same line again to create the flask app.
+   
+<img width="1141" alt="截屏2023-12-10 13 27 10" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/8e25f88f-a7e4-4a2c-a759-d0ae1fca894f">
+
+<img width="1395" alt="myfinalschedule" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/1ecf7aae-4e4b-4b94-a0b5-1dd72205dc6e">
+
+
+10. Set API_TOKEN in environment variable 
+11. Use the Flask App as demonstrated in App usage below
+12. App can be viewed in Azure Container and image can be viewed in container registry which are both in Azure Web Portal
+
+## App Usage
+1. Click plan your day
+2. Input the daily to-dos with the daily essentials and desired spotify music
+   
+<img width="1400" alt="截屏2023-12-09 21 12 28" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/94ac597d-ac44-4cfc-bf30-ea24928429b0">
+
+3. Click Generate Schedule
+4. A Planned schedule with a planned time to listen to the desired spotify music will be shown
+<img width="1222" alt="截屏2023-12-09 21 12 36" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/591d5fea-9cac-4b98-a344-2c25560bbc2c">
+
 ### Requirements
 Your team project should include the following:
 
