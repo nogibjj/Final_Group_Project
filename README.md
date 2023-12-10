@@ -5,8 +5,8 @@ This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cas
 This repository
 
 ## Github Actions CI/CD
-[CI]([![Lint](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml)
-[install]
+[![Lint](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/lint.yml)
+[![install](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/install.yml)
 
 ## Research Questions
 - What is the highest popularity track in the dataset?
