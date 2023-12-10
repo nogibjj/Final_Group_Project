@@ -16,3 +16,7 @@ python-dotenv
 databricks-sql-connector
 matplotlib
 seaborn
+# Flask
+Flask==2.3.3
+# openai
+openai==0.27.0
