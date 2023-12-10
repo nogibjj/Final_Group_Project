@@ -20,6 +20,9 @@ The music builder website application uses Docker to containerize images in Azur
 ## App Demonstration
 APP can be found here: [MusicScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
 
+<img width="895" alt="截屏2023-12-10 17 54 33" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/8b5f9857-b9c6-47e5-9064-a09d3c41ac59">
+
+
 ## App Functionality
 **Build a schedule for listening to popular spotify music:** This app helps to build schedule for listening to popular spotify music. Users can input their desired music songs, and the schedule builder will be able to return a daily schedule for the user. The schedule will be able to return the exact time suitable for listening to the music without interfering with the user's other essential to-dos. 
 
