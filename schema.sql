@@ -1,4 +1,4 @@
-CREATE TABLE spotify (
+CREATE TABLE spotify_songs (
     track_id VARCHAR(255) NOT NULL,
     track_name TEXT,
     track_artist TEXT,
