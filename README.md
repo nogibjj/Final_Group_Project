@@ -12,7 +12,10 @@ The music builder website application uses Docker to containerize images in Azur
 [![Format](https://github.com/nogibjj/Final_Group_Project/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/format.yml)
 [![CI](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml)
 
-## Research Questions
+## Data Exploration Dataset
+the dataset ...
+
+## Research Questions - Data Exploration
 - What is the highest popularity track in the dataset?
 - Which genre of music are the most popular?
 - Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
