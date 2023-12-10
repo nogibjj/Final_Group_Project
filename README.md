@@ -39,15 +39,18 @@ The music builder website application uses Docker to containerize images in Azur
 [![CI](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml/badge.svg)](https://github.com/nogibjj/Final_Group_Project/actions/workflows/CI.yml)
 
 ## Data Exploration Dataset
-The dataset used is a from Kaggle, which contains 300000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found in `spotify_song.csv`. 
+The dataset used in this project is from Kaggle, which contains 300000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found in `spotify_song.csv`. 
 
 
 ## Research Questions - Data Exploration
 - What is the highest popularity track in the dataset?
 - Which genre of music are the most popular?
+
 From our analysis, we can see that among all genres, pop is the most popular, followed by latin. And we found that Edm is the least popular genre on Spotify. 
+
 - Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
-The plot depicting the average track popularity over the months indicates a general upward trend as the year progresses. This could be attributed to a rise in people's leisure time and engagement with relaxing activities, particularly music, during the holiday seasons.
+  
+The plot depicting the average track popularity over the months indicates a general upward trend as the year progresses. The tracks released in December tend to have the highest average popularity. This could be attributed to a rise in people's leisure time and engagement with relaxing activities, particularly music, during the holiday seasons.
 
 ## App Demonstration
 APP can be found here: [MusicScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
