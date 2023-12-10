@@ -1,7 +1,6 @@
 import pandas as pd
 from unittest import mock, TestCase
 import main
-from mylib import lib
 
 class TestMain(TestCase):
 
