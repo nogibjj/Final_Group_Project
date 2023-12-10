@@ -47,16 +47,20 @@ The dataset used in this project is from Kaggle, which contains 300000 Spotify s
 
 ## Research Questions - Data Exploration
 - What is the highest popularity track in the dataset?
-  
-Dance Monkey by Tones and I has the highest popularity among all songs on Spotify, with a popularity score at 100. 
-
 - Which genre of music are the most popular?
+- Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
+## Data Exploration Visualization and Analysis
+https://github.com/nogibjj/Final_Group_Project/blob/main/popularity_distribution.png
 
+After sorting the tracks by popularity, we found out Dance Monkey by Tones and I has the highest popularity among all songs on Spotify, with a popularity score at 100. 
+
+https://github.com/nogibjj/Final_Group_Project/blob/main/genre_popularity.png
 From our analysis, we can see that among all genres, pop is the most popular, followed by latin. And we found that Edm is the least popular genre on Spotify. 
 
-- Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
-  
+https://github.com/nogibjj/Final_Group_Project/blob/main/monthly_popularity.png
 The plot depicting the average track popularity over the months indicates a general upward trend as the year progresses. The tracks released in December tend to have the highest average popularity. This could be attributed to a rise in people's leisure time and engagement with relaxing activities, particularly music, during the holiday seasons.
+
+
 
 ## App Demonstration
 APP can be found here: [MusicScheduleBuilder](http://myfinalschedule.kindground-9784b48c.westus2.azurecontainerapps.io)
