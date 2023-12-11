@@ -52,9 +52,11 @@ The dataset used in this project is from Kaggle, which contains 30,000 Spotify s
 
 
 ## Research Questions - Data Exploration
+
+- Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
 - What is the highest popularity track in the dataset?
 - Which genre of music are the most popular?
-- Trends in popularity - Does releasing a song at a certain month of a year, lead to higher popularity?
+
 ## Data Exploration Visualization and Analysis
 
 ![popularity_distribution](https://github.com/nogibjj/Final_Group_Project/assets/143833511/a15396fa-ac96-4775-8cee-4b4452d6b081)
