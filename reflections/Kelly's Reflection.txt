@@ -1,0 +1,33 @@
+IDS 706
+Final Project
+
+Kelly’s Reflection
+
+1.	Self-Reflection
+Personal Contribution: 
+	I was particularly active in initiating team meetings, mobilizing the team, coming up with new project ideas and contributing to essential components of the project. 
+	I contributed to mostly generating the microservices on Flask and Azure Databricks as I created the Flask App through Dockerization and self-designed app functions. I also utilized Azure Databricks to store database, edit on workspace and run job flows to reconfirm pipeline activity success. I contributed a lot of time in understanding the Flask App dockerization and container. 
+	I was also helpful to my teammates as I am welcome to any obstacles or technical questions encountered by my teammates. We are solving issues friendly together without many barriers. 
+	I was open to sharing ideas regardless of whether they would be used or recognized. 
+	I also contributed to setting goals and common understandings for the team as we began the project. 
+	I also try to specify these preparation steps on readme to help others reproduce the process as reproducing and documentation is also very important for a team work project. 
+
+Personal Learning: 
+	Team Communication: I learnt a lot as we communicate and collaborate as a group. It was a nice communication skill building process as we distribute personal tasks throughout meetings and the project timeline. 
+	Technical Skills: I also learnt a lot during the project as I develop understanding on docker, Flask app, Databricks and Locust test etc. Some of these are very new knowledge, microservice and response time test service platform for me. These, for sure, will be very useful for my future projects and data engineering progress. I will try to continue applying them in other relevant projects in the future. 
+
+Potential Improvement and Limitations: 
+	I was not as organized as ideally thought throughout the project timeline as we tend to delay tasks to the last few days. This was undesired as the final weeks are full of other coursework as well. We should have set a more detailed and clearer timeline with the deadlines for each small task to ensure earlier or better completion. 
+	Some of the technical details can be explained in more details for my teammates.
+
+2.	Peer Reflection (Given by Teammates) 
+Positive Attributes:
+1. Enthusiasm: Her positive attitude made her a joy to work with, often serving as a catalyst for team spirit.
+2. Strategic Thinking: Her vision for seeing the larger picture and aligning it with project goals was key in guiding the team’s efforts.
+3. Responsibility: Kelly consistently took ownership of her tasks, demonstrating a strong sense of duty and reliability in her role.
+
+Areas for Improvement:
+1. Time Management: Enhancing her ability to prioritize tasks would help in meeting project deadlines.
+2. Process Adherence: Greater attention to established processes and protocols would help in maintaining team alignment and efficiency.
+3. Delegation: could improve by entrusting tasks to others, which would help in managing her workload and fostering team trust.
+
