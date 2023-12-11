@@ -129,11 +129,22 @@ Total requests per second reach about more than 400 requests per second as well.
 
 <img width="1041" alt="截屏2023-12-10 18 36 34" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/0e42267d-43ff-462e-ad21-30928d8fcb4a">
 
+## Dockerization
+
+Docker is used to containerize the microservice including the container for resource group and the images used in web application. Dockerfile in this repository provides the details process for building and running the Docker container as well as installing the required dependencies. 
+
+<img width="1256" alt="截屏2023-12-10 13 34 56" src="https://github.com/nogibjj/Individual_Project4_Kelly_Tong/assets/142815940/a18f81eb-42d7-4ed7-bee8-a17dcf994275">
+
+The image "myfinalschedule" is stored in Azure APP Registry. It is automatically stored when the command line `az containerapp up --resource-group myfinalschedule --name myfinalschedule --ingress external --target-port 50505 --source .` is run for the second time.
+
 ## Azure Databricks Job Run
 Action of our CI/CD Pipeline is also tested through job run on Azure Databricks. Dataset and the entire Github repository is cloned in Azure Databricks workspace. A compute cluster is then created for the workspace as well as for the designed job run pipeline. This pipeline is designed to test all the python files in `mylib` folder, which are the essential files containing data exploration, extract and query. 
 
 <img width="1331" alt="截屏2023-12-10 18 42 34" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/2b05d6a8-90e6-4484-872f-1f379a4cde24">
 
+
+## AI Usage
+In this project, we have utilized knowledge learnt throughout the semester on AI tools. Particularly, we used Github Copilot, Azure Databricks Workspace AI tools and ChatGPT 4. GitHub Copilot, Databricks Workspace AI tools, and ChatGPT can form a powerful trio in streamlining a data engineering project for a team. GitHub Copilot aids developers by suggesting code snippets and entire functions, improving productivity and potentially reducing bugs by providing contextually relevant code based on the comments and code being written. Databricks Workspace offers a collaborative environment with integrated AI tools, enabling data scientists and engineers to build, train, and deploy machine learning models efficiently, leveraging Apache Spark’s big data processing capabilities. It simplifies the management of infrastructure and provides robust tools for data exploration and visualization. ChatGPT can assist the team in generating documentation, writing code, and even debugging by offering conversational insights into code structure and logic. The synergy of these tools can lead to a more cohesive development cycle, enhance the team's ability to tackle complex data problems, foster innovation, and significantly cut down on development time.
 
 ### Requirements
 Your team project should include the following:
