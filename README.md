@@ -48,7 +48,7 @@ Example Github Action for Test
 <img width="926" alt="截屏2023-12-10 17 37 39" src="https://github.com/nogibjj/Final_Group_Project/assets/142815940/5a04cda0-9e02-43cc-ae7c-01c6cccb7aa1">
 
 ## Data Exploration Dataset
-The dataset used in this project is from Kaggle, which contains 30,000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found in `spotify_song.csv`. 
+The dataset used in this project is from Kaggle, which contains 30,000 Spotify songs. It is originally from Spotify via the spotifyr package. For each song, there are 24 variables, including track id, name, artist, popularity, danceability etc. The spotify dataset can be found in `spotify_songs.csv`. 
 
 
 ## Research Questions - Data Exploration
