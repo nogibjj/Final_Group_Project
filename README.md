@@ -1,5 +1,7 @@
 # Final_Group_Project
 This is a repository for IDS 706 Final Team Project. Produced by Kelly Tong, Cassie Kang, Katherine Tian. 
+## Demo video:
+https://youtu.be/E5Stj3pII9s?si=DIZh_D6mE0NKXVrk
 
 ## Purpose
 This repository contains the microservice for a music schedule builder website application and spotify popular songs dataset exploratory analysis. These microservices interface with Azure Databricks pipeline (workspace, compute cluster, job run etc.), Azure Web App Service, and Flask app to deploy and run. We will explain these microservices in details in the sections below in thsi `READ.md` file. 
